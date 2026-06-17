@@ -14,10 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: compilar o teste
-      run: gcc test_jogodavelha.c functions_jogodavelha.c -o test_jogodavelha
+      run: gcc test_jogodavelha.c -o test_jogodavelha
     - name: executar o teste
       run: ./test_jogodavelha
     - name: compilar o programa principal
-      run: gcc jogodavelha.c functions_jogodavelha.c -o jogodavelha
+      run: gcc jogodavelha.c -o jogodavelha
     - name: executar o programa automático
       run: ./jogodavelha X auto
