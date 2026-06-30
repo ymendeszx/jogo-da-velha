@@ -22,6 +22,6 @@ int main() {
     assert(tabuleiro_cheio(t) == 0);
 
     printf("Todos os testes passaram com sucesso!\n");
-    printf("Feito por Lara Fazani\n");
+    printf("Feito por Marcelo Mendes\n");
     return 0;
 }
