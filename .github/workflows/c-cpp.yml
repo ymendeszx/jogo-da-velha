@@ -1,0 +1,23 @@
+name: C/C++ CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: compilar o teste
+      run: gcc test_jogodavelha.c -o test_jogodavelha
+    - name: executar o teste
+      run: ./test_jogodavelha
+    - name: compilar o programa principal
+      run: gcc jogodavelha.c -o jogodavelha
+    - name: executar o programa automático
+      run: ./jogodavelha X auto
