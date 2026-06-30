@@ -39,6 +39,6 @@ int main(int argc, char *argv[]) {
     if (venc != 0) printf("O jogador %d ganhou\n", venc);
     else printf("O jogo terminou sem vencedores\n");
 
-    printf("Feito por Lara Fazani\n");
+    printf("Feito por Marcelo Mendes\n");
     return 0;
 }
